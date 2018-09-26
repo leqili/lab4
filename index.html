@@ -11,7 +11,7 @@
   </header>
   <form method="POST" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
     <fieldset style="border-width: 1px; border-color: #990000; width:40%"> 
-      <h3>My Info</h3>
+      <legend><h3>My Info</h3></legend>
       <label>First name: <input type="text" name="first_name_field"></label><br><br>
       <label>Last name: <input type="text" name="last_name_field"></label><br><br>
       <label>Phone Number: <input type="text" name="phone_field"></label><br><br>
@@ -30,16 +30,16 @@
       </select>
       <br><br>
     </fieldset>
-    <h3>My Availabiity</h3>
+    <legend><h3>My Availabiity</h3></legend>
     <fieldset style="border-width: 1px; border-color: #990000; width:40%">
       <p>Days Available:</p>
-        <input type="checkbox" name="available_field" value="Sunday">Sunday<br>
-        <input type="checkbox" name="available_field" value="Monday">Monday<br>
-        <input type="checkbox" name="available_field" value="Tuesday">Tuesday<br>
-        <input type="checkbox" name="available_field" value="Wednesday">Wednesday<br>
-        <input type="checkbox" name="available_field" value="Thursday">Thursday<br>
-        <input type="checkbox" name="available_field" value="Friday<">Friday<br>
-        <input type="checkbox" name="available_field" value="Saturday">Saturday<br>
+	<inputtype="checkbox" name="available_field[]"value="Sunday">Sunday<br>
+        <inputtype="checkbox" name="available_field[]" value="Monday">Monday<br>
+        <inputtype="checkbox" name="available_field[]" value="Tuesday">Tuesday<br>
+        <inputtype="checkbox" name="available_field[]" value="Wednesday">Wednesday<br>
+        <inputtype="checkbox" name="available_field[]" value="Thursday">Thursday<br>
+        <inputtype="checkbox" name="available_field[]" value="Friday">Friday<br>
+        <inputtype="checkbox" name="available_field[]" value="Saturday">Saturday<br>
       <p>Any Commnts</p>
       <textarea cols="60" rows="10" name="comments_field" ></textarea>
     </fieldset>
